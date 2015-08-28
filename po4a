@@ -427,7 +427,7 @@ configuration file.
 
 =over 4
 
-=item B<porefs> I<type>[,B<wrap>|B<nowrap>]
+=item B<--porefs> I<type>[,B<wrap>|B<nowrap>]
 
 Specify the reference format. Argument I<type> can be one of B<none> to not
 produce any reference, B<noline> to not specify the line number (more
@@ -468,7 +468,7 @@ Set the package version for the POT header. The default is "VERSION".
 
 =item B<--msgmerge-opt> I<options>
 
-Extra options for B<msgmerge>.
+Extra options for B<msgmerge>(1).
 
 Note: B<$lang> will be extended to the current language.
 

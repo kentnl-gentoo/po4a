@@ -243,7 +243,7 @@ This permits to define the parameters accepted by the I<env> environment.
 This information is latter used to check the number of arguments of the
 \begin command, and permit to specify which one must be translated.
 The syntax of the I<parameters> argument is the same as described for the
-commands.
+??? commands.
 The first parameter of the \begin command is the name of the environment.
 This parameter must not be specified in the list of parameters. Here are
 some examples:
@@ -1168,7 +1168,7 @@ sub parse {
 #       environment contains an un-closed bracket)
         if (   ($closed and ($line =~ /^\s*$/ or
                              $line =~ /^\s*$RE_VERBATIM\s*$/))
-            or (in_verbatim(@env) and $line =~ /^\s*\Q$ESCAPE\Eend{$env[-1]}\s*$/)
+            or (in_verbatim(@env) and $line =~ /^\s*\Q$ESCAPE\Eend\{$env[-1]\}\s*$/)
            ) {
             # An empty line. This indicates the end of the current
             # paragraph.

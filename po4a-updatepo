@@ -81,7 +81,7 @@ It requires B<gettext> 0.16 or later, and is activated by default.
 
 =item B<--msgmerge-opt> I<options>
 
-Extra options for B<msgmerge>.
+Extra options for B<msgmerge>(1).
 
 =item B<-h>, B<--help>
 
@@ -103,7 +103,7 @@ Increase the verbosity of the program.
 
 Output some debugging information.
 
-=item B<porefs> I<type>[,B<wrap>|B<nowrap>]
+=item B<--porefs> I<type>[,B<wrap>|B<nowrap>]
 
 Specify the reference format. Argument I<type> can be one of B<none> to not
 produce any reference, B<noline> to not specify the line number (more
